@@ -39,10 +39,12 @@ const App = () => {
   );
 
   return (
-    <div>
-      <h1>Phonebook</h1>
-      <ContactForm onAddContact={handleAddContact} />
-      <SearchBox value={search} onChange={handleSearchChange} />
+    <div className="app-container">
+      <div className="form-container">
+        <h1>Phonebook</h1>
+        <ContactForm onAddContact={handleAddContact} />
+        <SearchBox value={search} onChange={handleSearchChange} />
+      </div>
       <ContactList contacts={filteredContacts} onDelete={handleDeleteContact} />
     </div>
   );
