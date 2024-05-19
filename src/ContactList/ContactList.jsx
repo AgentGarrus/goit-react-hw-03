@@ -1,4 +1,4 @@
-import Contact from '../Contact/Contact.jsx';
+import Contact from '../Contact/Contact';
 
 const ContactList = ({ contacts, onDelete }) => (
   <ul>
